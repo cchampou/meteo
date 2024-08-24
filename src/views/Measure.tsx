@@ -5,7 +5,7 @@ import APIService from '../services/APIService';
 function Measure() {
 
   useEffect(() => {
-    APIService.getStationMeasurements("69029001")
+    APIService.getStationMeasurementsHourly("69029001")
       .then((data) => {
         console.log(JSON.parse(data)[0]);
       }).catch((error) => {

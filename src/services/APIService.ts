@@ -10,6 +10,9 @@ class APIService {
   private static get getStationMeasurementsPathName() {
     return "/station/infrahoraire-6m"
   }
+  private static get getStationMeasurementsHourlyPathName() {
+    return "/station/horaire"
+  }
 
   /** internal methods */
 
@@ -40,6 +43,11 @@ class APIService {
 
   public static async getStationMeasurements(stationId: string) {
     const url = `${APIService.BASE_URL}${this.getStationMeasurementsPathName}?id_station=${stationId}&format=geojson`
+    return await this.fetch(url)
+  }
+
+  public static async getStationMeasurementsHourly(stationId: string) {
+    const url = `${APIService.BASE_URL}${this.getStationMeasurementsHourlyPathName}?id_station=${stationId}&format=geojson`
     return await this.fetch(url)
   }
 }
