@@ -1,0 +1,19 @@
+{
+  "name": "meteofrance",
+  "version": "0.0.0-dev",
+  "author": "Clement Champouillon <clement@champouillon.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "vite"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.4",
+    "@types/react-dom": "^18.3.0",
+    "vite": "^5.4.2"
+  }
+}
